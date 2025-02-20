@@ -1,5 +1,13 @@
 * {
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
 }
 
 ul,
@@ -11,4 +19,115 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.3;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 18px;
+}
+
+header {
+  background-color: #1F2937;
+
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu a {
+  color: lightgrey;
+  font-size: 18px;
+}
+
+.nav-menu a:hover {
+  color: lightsteelblue;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.hero img {
+  display: flex;
+  max-width: 400px;
+  margin-left: 0;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*half column*/
+.hero .content,
+.img-container {
+  flex: 1;
+}
+
+.content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 92px 0;
+}
+
+.content button {
+  background-color: #3C82F6;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 4px;
+  align-self: start;
+}
+
+/*Center image*/
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-hero {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.text-hero {
+  color: lightgrey;
+  font-size: 18px;
+  display: inline-block;
+  max-width: 400px;
 }
