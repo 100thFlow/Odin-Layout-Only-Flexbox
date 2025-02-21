@@ -112,15 +112,21 @@ header nav {
   padding: 92px 0;
 }
 
-.content button {
+
+.sign-up.btn {
   background-color: #3C82F6;
   color: white;
+  cursor: pointer;
   font-weight: bold;
   font-size: 16px;
   border: none;
   padding: 8px 24px;
   border-radius: 4px;
   align-self: start;
+}
+
+.sign-up.btn:hover {
+  background-color: #2D90BB;
 }
 
 /*Center image*/
@@ -197,4 +203,34 @@ header nav {
 
 .quote-container {
   max-width: 800px;
+}
+
+.cta-container {
+  background-color: #3C82F6;
+  border-radius: 8px;
+  padding: 48px 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-text-box {
+  flex: 250px;
+}
+
+.cta-text-box h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cta-text-box p {
+  color: lightgrey;
+}
+
+.cta-button.sign-up.btn {
+  border: 2px solid white;
+  align-self: center;
+  min-width: fit-content;
 }
